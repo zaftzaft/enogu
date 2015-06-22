@@ -3,16 +3,16 @@ Enogu = {}
 up = (str) -> "#{str.slice(0, 1).toUpperCase()}#{str.slice 1}"
 
 colors =
-  black: 30
-  red: 31
-  green: 32
-  yellow: 33
-  blue: 34
-  magenta: 35
-  cyan: 36
-  gray: 37
+  black:    30
+  red:      31
+  green:    32
+  yellow:   33
+  blue:     34
+  magenta:  35
+  cyan:     36
+  gray:     37
   darkGray: 90
-  white: 97
+  white:    97
 
 bgColors = Object.keys(colors).reduce (o, key) ->
   o[key] = colors[key] + 10
@@ -20,12 +20,12 @@ bgColors = Object.keys(colors).reduce (o, key) ->
 , {}
 
 lightColors =
-  red: 91
-  green: 92
-  yellow: 93
-  blue: 94
+  red:     91
+  green:   92
+  yellow:  93
+  blue:    94
   magenta: 95
-  cyan: 96
+  cyan:    96
 
 bgLightColors = Object.keys(lightColors).reduce (o, key) ->
   o[key] = lightColors[key] + 10
