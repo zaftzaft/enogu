@@ -58,4 +58,9 @@ Enogu.c256 = (n) ->
     return "\x1b[38;5;#{n}m#{str}\x1b[39m"
 
 
+Enogu.bg256 = (n) ->
+  (str) ->
+    return "\x1b[48;5;#{n}m#{str}\x1b[49m"
+
+
 module.exports = Enogu
