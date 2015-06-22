@@ -7,5 +7,3 @@ Object
       console.log enogu[key](key)
 
 
-for i in [0..255]
-  console.log enogu.c256(i)("#{i}")
