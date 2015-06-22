@@ -1,6 +1,6 @@
 {
   "name": "@zaftzaft/enogu",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "coloring your terminal",
   "main": "index.js",
   "directories": {
