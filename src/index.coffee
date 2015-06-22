@@ -62,5 +62,8 @@ Enogu.bg256 = (n) ->
   (str) ->
     return "\x1b[48;5;#{n}m#{str}\x1b[49m"
 
+Enogu.closeFg = "\x1b[39m"
+Enogu.closeBg = "\x1b[49m"
+Enogu.resetg = "\x1b[0m"
 
 module.exports = Enogu
