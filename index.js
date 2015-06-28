@@ -72,6 +72,10 @@
     };
   });
 
+  Enogu.$ = {};
+
+  Enogu.bg = {};
+
   Enogu.c256 = function(n) {
     return function(str) {
       return "\x1b[38;5;" + n + "m" + str + "\x1b[39m";
@@ -82,6 +86,14 @@
     return function(str) {
       return "\x1b[48;5;" + n + "m" + str + "\x1b[49m";
     };
+  };
+
+  Enogu.alias = function(name, n) {
+    return Enogu.$[name] = Enogu.c256(n);
+  };
+
+  Enogu.aliasBg = function(name, n) {
+    return Enogu.bg[name] = Enogu.bg256(n);
   };
 
   Enogu.closeFg = "\x1b[39m";

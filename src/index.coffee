@@ -53,14 +53,22 @@ Object.keys(bgLightColors).forEach (key) ->
   Enogu["bgLight#{up key}"] = (str) ->
     return "\x1b[#{c}m#{str}\x1b[49m"
 
+Enogu.$ = {}
+Enogu.bg = {}
+
 Enogu.c256 = (n) ->
   (str) ->
     return "\x1b[38;5;#{n}m#{str}\x1b[39m"
 
-
 Enogu.bg256 = (n) ->
   (str) ->
     return "\x1b[48;5;#{n}m#{str}\x1b[49m"
+
+Enogu.alias = (name, n) ->
+  Enogu.$[name] = Enogu.c256 n
+
+Enogu.aliasBg = (name, n) ->
+  Enogu.bg[name] = Enogu.bg256 n
 
 Enogu.closeFg = "\x1b[39m"
 Enogu.closeBg = "\x1b[49m"
