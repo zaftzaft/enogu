@@ -1,6 +1,6 @@
 {
   "name": "@zaftzaft/enogu",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "coloring your terminal",
   "main": "index.js",
   "directories": {
@@ -13,5 +13,6 @@
     "color"
   ],
   "author": "@zaftzaft",
+  "repository": "https://github.com/zaftzaft/enogu.git",
   "license": "MIT"
 }
